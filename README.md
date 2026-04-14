@@ -29,16 +29,18 @@ docker pull amazonlinux
 
 docker run -dit --name webserver -p 80:80 amazonlinux
 docker exec -it webserver /bin/bash
+
 4. Configure Web Server (Inside Container)
 yum update -y
 yum install httpd -y
 cd /var/www/html
-5. Deploy Website
+
+6. Deploy Website
 Copy HTML file into /var/www/html
 Start Apache server:
 httpd
-6. Access Application
-http://<EC2-PUBLIC-IP>
+
+
 Features
 Containerized web hosting
 Lightweight Apache server setup
